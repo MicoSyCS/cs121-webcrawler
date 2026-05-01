@@ -112,7 +112,7 @@ def extract_next_links(url, resp):
         return []
 
     tokens = _tokenize(soup)
-    if len(tokens) < 50:
+    if len(tokens) < 20:
         return []
 
     digest = hashlib.sha256(" ".join(tokens).encode()).hexdigest()
